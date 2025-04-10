@@ -34,6 +34,7 @@ jobs:
         run: |
           git clone https://github.com/wyxdlz54188/butterfly.git themes/butterfly
           hexo clean
+          hexo new post "new post"
           hexo generate
           ls
 
