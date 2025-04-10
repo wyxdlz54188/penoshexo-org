@@ -34,6 +34,7 @@ jobs:
         run: |
           git clone https://github.com/wyxdlz54188/butterfly.git themes/butterfly
           hexo clean
+          hexo generate
           hexo new post "new post"
           hexo generate
           ls
@@ -48,8 +49,6 @@ jobs:
          cd public
          git init
          git add .
-         git config --global user.name "wyxdlz5418"
-         git config --global user.email "liyuqili_1379zi@qq.com"
          git commit -m "通过工作流创建"
          git remote add origin https://${{ secrets.GH_TOKEN }}@github.com/wyxdlz54188/penoshexo-org.git
          git push origin HEAD:gh-pages -f
