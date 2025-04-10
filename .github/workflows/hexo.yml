@@ -35,14 +35,12 @@ jobs:
           git clone https://github.com/wyxdlz54188/butterfly.git themes/butterfly
           hexo clean
           hexo generate
-          hexo new post "new post"
-          hexo generate
           ls
 
       - name: 设置Git配置
         run: |
           git config --global user.name 'wyxdlz54188'
-          git config --global user.email 'lizi54188@outlook.com'
+          git config --global user.email 'liyuqili_1379zi@qq.com'
           
       - name: 推送到 GitHub Pages
         run: |
