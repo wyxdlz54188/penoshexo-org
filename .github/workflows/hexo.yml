@@ -32,7 +32,7 @@ jobs:
           npm install hexo-generator-search --save
       - name: 创建blog页面
         run: |
-          git clone https://github.com/wyxdlz54188/butterfly.git themes/butterfly
+          git clone -b master https://github.com/PenosExt/butterfly.git themes/butterfly
           hexo clean
           hexo generate
           ls
