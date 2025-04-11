@@ -48,6 +48,6 @@ jobs:
          git init
          git add .
          git commit -m "通过工作流创建"
-         git remote add origin https://${{ secrets.GH_TOKEN }}@github.com/PenosExt/hexo.git
+         git remote add origin https://${{ secrets.GH_TOKEN }}@github.com/PenosExt/penosext.github.io.git
          git push origin HEAD:gh-pages -f
          
