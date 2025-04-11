@@ -102,7 +102,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/PenosExt/hexo.git
+  repository: https://github.com/PenosExt/penosext.github.io.git
   branch: gh-pages
 
 # hexo-admin authentification
