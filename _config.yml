@@ -21,7 +21,7 @@ timezone: '' #时区，不需要加，加上不仅没用还会引起一堆问题
 ##在此设置您的网站url。例如，如果您使用GitHub页面，请将url设置为“https://username.gitHub.io/project”
 url: https://poscrack.ip-ddns.com/ #网址
 permalink: :year/:month/:day/:title/ #永久链接
-permalink_defaults: https://penosext.github？io/ #永久链接_默认值
+permalink_defaults:  #永久链接_默认值
 pretty_urls: #美化链接
   trailing_index: true 
   # Set to false to remove trailing 'index.html' from permalinks
