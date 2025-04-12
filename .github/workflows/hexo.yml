@@ -30,6 +30,7 @@ jobs:
           npm install --save hexo-blog-encrypt
           npm install hexo-renderer-pug hexo-renderer-stylus
           npm install hexo-generator-search --save
+          npm install hexo-wordcount hexo-symbols-count-time --save
       - name: 创建blog页面
         run: |
           git clone -b master https://github.com/PenosExt/butterfly.git themes/butterfly
