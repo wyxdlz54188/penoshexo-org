@@ -1,115 +1,153 @@
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
+# Hexo配置
+##文档:https://hexo.io/docs/configuration.html
+##来源:https://github.com/hexojs/hexo/
 
 # Site
-title: PenosExt
-subtitle: ''
-description: ''
-keywords:
-author: wyxdlz54188
-language: zh-CN
-timezone: ''
+#站点
+title: POSEC # 标题
+subtitle: '海内存知己，天涯若比邻' #副标题
+description: '' #描述
+keywords: #关键词
+author: wyxdlz54188 #作者
+language: zh-CN #语言
+timezone: '' #时区，不需要加，加上不仅没用还会引起一堆问题
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://bloglizi.dpdns.org
-permalink: :year/:month/:day/:title/
-permalink_defaults:
-pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+#网址
+##在此设置您的网站url。例如，如果您使用GitHub页面，请将url设置为“https://username.gitHub.io/project”
+url: https://poscrack.ip-ddns.com/ #网址
+permalink: :year/:month/:day/:title/ #永久链接
+permalink_defaults: https://penosext.github？io/ #永久链接_默认值
+pretty_urls: #美化链接
+  trailing_index: true 
+  # Set to false to remove trailing 'index.html' from permalinks
+  #设置为false以从永久链接中删除尾随的“index.html”
+  trailing_html: true 
+  # Set to false to remove trailing '.html' from permalinks
+  #设置为false以删除结尾'。来自永久链接的“html”
 
 # Directory
-source_dir: source
-public_dir: public
-tag_dir: 标签
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
+#目录
+###这里不会就绝对不要改！！！会报错！！！特别是public_dir！！！改了一定报错！！！
+source_dir: source #源目录
+public_dir: public #公共目录
+tag_dir: tags #标签目录
+archive_dir: archives #存档目录
+category_dir: categories #类别目录
+code_dir: downloads/code #源码目录，包含代码目录（source_dir)
+i18n_dir: :lang #i18n目录
+skip_render: #将被复制到 raw 但不被渲染的路径。您可以使用 glob 表达式进行路径匹配。public
 
 # Writing
+# 写作
 new_post_name: :title.md # File name of new posts
-default_layout: post
+#新帖子的文件名格式
+default_layout: post #默认布局
 titlecase: false # Transform title into titlecase
+#将标题转换为标题大小写？
 external_link:
   enable: true # Open external links in new tab
+  #在新标签页中打开外部链接？
   field: site # Apply to the whole site
-  exclude: ''
-filename_case: 0
-render_drafts: false
-post_asset_folder: true
-relative_link: false
-future: true
-syntax_highlighter: highlight.js
-highlight:
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
+  #适用于整个网站
+  exclude: '' #排除，即在某个页面不从新标签页中打开外部链接
+filename_case: 0 #将文件名转换为小写; 大写1 2
+render_drafts: false #显示草稿？
+post_asset_folder: false #启用 Asset 文件夹？
+relative_link: false #相对于根文件夹创建链接？
+future: true #显示未来的帖子？
+syntax_highlighter: highlight.js #代码块语法高亮设置
+highlight: #代码块语法高亮设置
+  line_number: true #行号
+  auto_detect: false #自动检测
+  tab_replace: '' #制表符替换
+  wrap: true #包
   hljs: false
-prismjs:
-  preprocess: true
-  line_number: true
-  tab_replace: ''
+prismjs: #代码块语法高亮设置
+  preprocess: true #预处理
+  line_number: true #行号
+  tab_replace: '' #制表符替换
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 10
-  order_by: -date
+# 首页设置
+# path:博客索引页面的根路径。(默认值=“”)
+# per_page:每页显示的帖子。(0 =禁用分页)
+# order_by:发布订单。(默认情况下按日期降序排序)
+index_generator: #生成一个帖子存档，由 hexo-generator-index 提供支持
+  path: '' #博客索引页的根路径
+  per_page: 10 #每页显示的帖子。
+  order_by: -date #帖子顺序。默认情况下，按降序日期 （从新到旧） 排序。
 
 # Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
+# 类别 & 标签
+default_category: uncategorized #默认类别
+category_map: #覆盖类别 slug
+tag_map: #覆盖标签 slug
 
 # Metadata elements
+# 元数据元素
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
-meta_generator: true
+meta_generator: true #元生成器
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
+
+# 日期/时间格式
+## Hexo使用Moment.js解析和显示日期
+##您可以按照中的定义自定义日期格式
+
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
+date_format: YYYY-MM-DD #日期格式
+time_format: HH:mm:ss #时间格式
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+## 更新选项支持“时间”、“日期”、“空”
+updated_option: 'mtime' #更新选项，在 front-matter 中未提供时要使用的更新值。
+# updated_option控制 front-matter 中未提供的值：updated
+# mtime：使用文件修改日期作为 。这是 Hexo 从 3.0.0 开始的默认行为updated
+# date：用作 .通常在文件修改日期可能不同时与 Git 工作流程一起使用。dateupdated
+# empty：未提供时只需丢弃。可能与大多数主题和插件不兼容。updated
+#empty：未提供时只需丢弃。可能与大多数主题和插件不兼容。updated
+
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 10
-pagination_dir: page
+
+#分页
+##将per_page设置为0以禁用分页
+per_page: 10 #每页上显示的帖子数。 禁用分页就输入0
+pagination_dir: page #URL格式
+
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
-ignore:
+#包括/排除文件
+## include:/exclude:选项仅适用于“source/”文件夹
+include: #包括
+exclude: #排除
+ignore: #忽略
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly
+#扩展
+##插件:https://hexo.io/plugins/
+##主题:https://hexo.io/themes/
+theme: butterfly #填写你要用并且下好的主题名称，如果禁用主题就写false
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+# 部署
+## 文件:https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repository: https://github.com/PenosExt/penosext.github.io.git
   branch: gh-pages
-
-# hexo-admin authentification
-admin:
-  username: wyxdlz54188
-  password_hash: $2a$10$4pwEGSjfyxtZ1zBdvNRXYezI.RRLPuDyykQJfRsf5kUTrfujEQwna
-  secret: my super secret phrase
-  marked:
-  prependRoot: true
-  postAsset: true
+  
