@@ -574,7 +574,7 @@ search:
 share:
   # 选择：sharejs / addtoany
   # 如果不需要分享功能，保持为空
-  use: addtoany
+  use: sharejs
 
   # Share.js
   # https://github.com/overtrue/share.js
