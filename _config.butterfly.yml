@@ -537,7 +537,7 @@ math:
 search:
   # 选择：algolia_search / local_search / docsearch
   # 如果不需要搜索功能，保持为空
-  use:
+  use: local_search
   placeholder:
 
   # Algolia 搜索
@@ -547,6 +547,10 @@ search:
 
   # 本地搜索
   local_search:
+    labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}"
+    # Preload the search data when the page loads.
     # 页面加载时预加载搜索数据
     preload: true
     # 每篇文章显示的顶部 n 个搜索结果，设置为 -1 显示所有结果
