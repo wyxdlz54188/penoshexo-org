@@ -11,7 +11,7 @@ nav:
   fixed: false
 
 menu:
-  # 首页: / || fas fa-home
+  首页: / || fas fa-home
   # 列表||fas fa-list:
   #   音乐: /music/ || fas fa-music
   #   电影: /movies/ || fas fa-video
@@ -24,7 +24,7 @@ code_blocks:
   # 代码块主题: darker / pale night / light / ocean / false
   theme: light
   # 是否使用 Mac 风格
-  macStyle: false
+  macStyle: true
   # 代码块高度限制（单位: px）
   height_limit: false
   # 是否自动换行
@@ -118,7 +118,7 @@ error_img:
 # 简单的 404 页面
 error_404:
   # 是否启用 404 页面
-  enable: false
+  enable: true
   # 404 页面的副标题
   subtitle: 'Page Not Found'
   # 404 页面的卡片背景图片
@@ -180,14 +180,15 @@ subtitle:
   # 1 - hitokoto.cn
   # 2 - yijuzhan.com
   # 3 - jinrishici.com
-  source: false
+  source: 1
   # 如果关闭打字机效果，副标题将仅显示 sub 的第一行内容
   sub:
 
 # 首页文章佈局
-# 1: 行佈局
-# 2: 列布局
-index_layout: 1
+1: 海内存知己，天涯若比邻
+2: 破解之心，人皆有之
+3: 逆向之道，尽在其中
+index_layout: 3
 
 # 在首页显示文章简介
 # 1: 描述
@@ -270,7 +271,7 @@ post_pagination: 1
 # 显示文章过期通知
 noticeOutdate:
   # 是否启用过期通知
-  enable: false
+  enable: true
   # 样式: simple / flat
   style: flat
   # 多少天后显示通知
@@ -288,11 +289,11 @@ footer:
     # 是否启用所有者显示
     enable: true
     # 网站创建年份
-    since: 2019
+    since: 2025
   # 自定义文本
   custom_text:
   # 主题和框架的版权声明
-  copyright: true
+  copyright: false
 
 # --------------------------------------
 # 侧边栏设置
@@ -327,14 +328,14 @@ aside:
       # 按钮图标
       icon: fab fa-github
       # 按钮文本
-      text: Follow Me
+      text: 关注
       # 按钮链接
-      link: https://github.com/xxxxxx
+      link: https://github.com/penosext
   card_announcement:
     # 是否显示公告卡片
     enable: true
     # 公告内容
-    content: This is my Blog
+    content: 这是PenOSCrack更新日志频道，及关于我们
   card_recent_post:
     # 是否显示最近文章卡片
     enable: true
@@ -417,7 +418,7 @@ rightside_bottom:
 # 简繁转换设置
 translate:
   # 是否启用简繁转换
-  enable: false
+  enable: true
   # 按钮文本
   default: 繁
   # 网站语言（1 - 繁体中文 / 2 - 简体中文）
@@ -448,7 +449,7 @@ darkmode:
   end:
 
 # 在返回顶部按钮中显示滚动百分比
-rightside_scroll_percent: false
+rightside_scroll_percent: true
 
 # 不要修改以下设置，除非你知道它们的工作原理
 # 选择：readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -481,14 +482,14 @@ copy:
   enable: true
   # 在复制的内容后添加版权信息
   copyright:
-    enable: false
+    enable: true
     # 当复制字符数超过 limit_count 时添加版权信息
     limit_count: 150
 
 # 需要安装 hexo-wordcount 插件
 wordcount:
   # 是否启用字数统计
-  enable: false
+  enable: true
   # 在文章元信息中显示字数统计
   post_wordcount: true
   # 在文章元信息中显示閲读时间
@@ -547,9 +548,9 @@ search:
   # 本地搜索
   local_search:
     # 页面加载时预加载搜索数据
-    preload: false
+    preload: true
     # 每篇文章显示的顶部 n 个搜索结果，设置为 -1 显示所有结果
-    top_n_per_article: 1
+    top_n_per_article: -1
     # 将 HTML 字符串反转义为可读内容
     unescape: false
     CDN:
@@ -569,7 +570,7 @@ search:
 share:
   # 选择：sharejs / addtoany
   # 如果不需要分享功能，保持为空
-  use: sharejs
+  use: addtoany
 
   # Share.js
   # https://github.com/overtrue/share.js
