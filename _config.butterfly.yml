@@ -331,10 +331,6 @@ aside:
       text: 关注
       # 按钮链接
       link: https://github.com/penosext
-card_author:
-    # 是否显示作者信息卡片
-    enable: true
-    # 作者描述
     description:
     button:
       # 是否显示按钮
