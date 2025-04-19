@@ -173,6 +173,9 @@ subtitle:
   # 自定义 typed.js
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
+  1: 海内存知己，天涯若比邻
+  2: 破解之心，人皆有之
+  3: 逆向之道，尽在其中
   # 来源 - 调用第三方服务 API（仅限中文）
   # 它将首先显示来源，然后显示副标题内容
   # 选择: false/1/2/3
@@ -266,7 +269,7 @@ related_post:
 # 1: “下一篇文章”将链接到旧文章
 # 2: “下一篇文章”将链接到新文章
 # false: 禁用分页
-post_pagination: 1,2
+post_pagination: flase
 
 # 显示文章过期通知
 noticeOutdate:
