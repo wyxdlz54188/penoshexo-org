@@ -331,6 +331,7 @@ aside:
       text: 关注
       # 按钮链接
       link: https://github.com/penosext
+    button:
       icon: fas fa-envelope
       mailto: liyuqili_1379zi@qq.com
       # 按钮文本
