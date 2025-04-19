@@ -266,7 +266,7 @@ related_post:
 # 1: “下一篇文章”将链接到旧文章
 # 2: “下一篇文章”将链接到新文章
 # false: 禁用分页
-post_pagination: 1
+post_pagination: 1,2
 
 # 显示文章过期通知
 noticeOutdate:
