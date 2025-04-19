@@ -12,8 +12,8 @@ nav:
 
 menu:
   首页: / || fas fa-home
+  教程: /tags/教程/ || fas fa-solid fa-book
   关于: /tags/关于 ||fa-solid fa-users
-  教程: /tags/教程/ || fasfa-solid fa-book
   #   电影: /movies/ || fas fa-video
 
 # --------------------------------------
