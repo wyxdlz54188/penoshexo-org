@@ -12,7 +12,7 @@ nav:
 
 menu:
   首页: / || fas fa-home
-  关于我们: /tags/%E5%85%B3%E4%BA%8E ||fas fa-l
+  关于我们: /tags/%E5%85%B3%E4%BA%8E ||fa-solid fa-list:
   #   音乐: /music/ || fas fa-music
   #   电影: /movies/ || fas fa-video
 
