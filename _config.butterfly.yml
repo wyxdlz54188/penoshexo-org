@@ -222,7 +222,7 @@ post_copyright:
   # 是否启用版权声明
   enable: true
   # 是否进行文章 URL 解码
-  decode: false
+  decode: true
   # 作者链接
   author_href:
   # 许可证类型
