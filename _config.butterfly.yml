@@ -331,7 +331,6 @@ aside:
       text: 关注
       # 按钮链接
       link: https://github.com/penosext
-    description:
     button:
       # 是否显示按钮
       enable: true
