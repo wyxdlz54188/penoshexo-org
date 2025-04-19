@@ -331,6 +331,10 @@ aside:
       text: 关注
       # 按钮链接
       link: https://github.com/penosext
+      icon: fas fa-envelope
+      mailto: liyuqili_1379zi@qq.com
+      # 按钮文本
+      text: 邮箱
   card_announcement:
     # 是否显示公告卡片
     enable: true
@@ -524,7 +528,7 @@ math:
     # 启用上下文菜单
     enableMenu: true
     # 选择：all / ams / none，这控制是否对公式编号以及如何编号
-    tags: none
+    tags: all
 
   katex:
     # 启用复制 KaTeX 公式
@@ -902,7 +906,7 @@ preloader:
   # 资源
   # 1. 全屏加载
   # 2. 进度条
-  source: 2
+  source: 1
   # pace 主题 (参见 https://codebyzach.github.io/pace/)
   pace_css_url:
 
